@@ -1,0 +1,13 @@
+#include <cmath>
+void P(int &n,int c)
+{
+    int nou=0,p=0;
+    while(n)
+    {
+        if(n%10!=c){
+        nou+=pow(10,p)*(n%10);
+        p++;
+        }n/=10;
+    }
+    n=nou;
+}
